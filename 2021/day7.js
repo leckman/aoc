@@ -28,7 +28,7 @@ function medianOptions(crabs) {
     const lowerBound = upperBound - 1;
     return [crabs[lowerBound], crabs[upperBound]];
   } else {
-    const medianIndex = crabs[(crabs.length - 1) / 2]
+    const medianIndex = (crabs.length - 1) / 2;
     return [crabs[medianIndex]];
   }
 }
