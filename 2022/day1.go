@@ -11,7 +11,7 @@ import (
 
 func getData() (data [][]int, err error) {
 
-	file, err := os.Open(fmt.Sprintf("day1.txt", day))
+	file, err := os.Open("day1.txt")
 	if err != nil {
 		return [][]int{}, err
 	}
