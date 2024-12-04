@@ -1,5 +1,9 @@
 const DAY_NUM = 0;
 
+if (DAY_NUM === 0) {
+  alert("Did not update the day num");
+}
+
 let TESTING = true;
 let PART_NUMBER = 1;
 
@@ -10,7 +14,7 @@ async function fetchData() {
   if (TESTING) {
     return PART_NUMBER === 1 ? sampleData1 : sampleData2;
   }
-  return fetch(`https://adventofcode.com/2023/day/${DAY_NUM}/input`).then(
+  return fetch(`https://adventofcode.com/2024/day/${DAY_NUM}/input`).then(
     (res) => res.text()
   );
 }
